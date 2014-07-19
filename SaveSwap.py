@@ -13,7 +13,6 @@ class SaveSwap():
         [x[0] for x in os.walk("C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII")]
         folder = x[0].split("\\")[-1]
         self.PATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\" + folder + "\\"
-##        self.SPATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\" + folder + "\save\\"
 
     def run(self):
         d = os.path.dirname(self.PATH)
@@ -77,10 +76,10 @@ class SaveSwap():
         pass
 
 ##no guarantee this'll work
-
-s = SaveSwap()
-s.run()
-##except:
-##    print "Something went horribly wrong. Try relaunching and send me an email about the problem"
-##    print "alessandro.minali@gmail.com"
-##    input()
+try:
+    s = SaveSwap()
+    s.run()
+except:
+    print "Something went horribly wrong. Try relaunching and send me an email about the problem"
+    print "alessandro.minali@gmail.com"
+    input()
