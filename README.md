@@ -14,7 +14,7 @@ Installation
 Setup
 --------------
 1. Figure out where dark souls 2 saves on your pc (google)
-2. Figure out you user name. For example if the path is ***C:\Users\Alessandro\Downloads***, then my user name is ***Alessandro***
+2. Figure out your pc user name. For example if the path is ***C:\Users\Alessandro\Downloads***, then my user name is ***Alessandro***
 3. Open config.txt and enter you username in the appropiate area
 
 Usage
