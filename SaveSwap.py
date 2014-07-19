@@ -10,8 +10,10 @@ class SaveSwap():
     def __init__(self):
         self.FNAME = "DARKSII0000.sl2"
         self.config()
-        self.PATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\0110000102050552\\"
-        self.SPATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\0110000102050552\save\\"
+        [x[0] for x in os.walk("C:\Users\Alessandro\AppData\Roaming\DarkSoulsII")]
+        folder = x[0].split("\\")[-1]
+        self.PATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\" + folder + "\\"
+        self.SPATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\" + folder + "\save\\"
 
     def run(self):
         d = os.path.dirname(self.SPATH)
