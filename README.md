@@ -1,7 +1,7 @@
 Dark Souls 2 Save Swap
 =========
 
-A small script to make save swapping much easier on players farming or doing tough challenge runs.
+A small script to make save swapping much easier on players farming or doing tough challenge runs using hotkeys.
 
 Installation
 --------------
@@ -25,6 +25,7 @@ Usage
 
 Notes
 -----------------
+- Console window must have focus to use hotkeys (ie. click on it before pressing f1 or something)
 - Saves can be made at any time.
 - Loads **MUST** be made at the login screen before you select continue and choose a character
 - If anything goes wrong during a session, manually use the MASTER save to overwrite your dks2 save.
