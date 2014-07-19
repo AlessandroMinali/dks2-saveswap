@@ -10,20 +10,22 @@ class SaveSwap():
     def __init__(self):
         self.FNAME = "DARKSII0000.sl2"
         self.config()
-        [x[0] for x in os.walk("C:\Users\Alessandro\AppData\Roaming\DarkSoulsII")]
+        [x[0] for x in os.walk("C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII")]
         folder = x[0].split("\\")[-1]
         self.PATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\" + folder + "\\"
-        self.SPATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\" + folder + "\save\\"
+##        self.SPATH = "C:\Users\\" + self.USERNAME + "\AppData\Roaming\DarkSoulsII\\" + folder + "\save\\"
 
     def run(self):
-        d = os.path.dirname(self.SPATH)
-        if not os.path.exists(d):
-            print "Intializing save directory @ " + self.SPATH
-            os.mkdir(d)
+        d = os.path.dirname(self.PATH)
+        if not(int(self.setup)):
+            print "Intializing save directory"
             print "--------------------------------------"
             self.make_save("original")
             print "Made original copy. DO NOT DELETE THIS"
             print "--------------------------------------"
+            f = open("config.txt", "w")
+            f.write(self.data[:-1] + str(1))
+            f.close()
         print "Directory found, making master save record for this session ..."
         self.make_save("master")
         print "--------------------------------------"
@@ -55,27 +57,30 @@ class SaveSwap():
 
     def make_save(self, name):
         time = str(datetime.datetime.now()).split()[1].split(".")[0]
-        shutil.copyfile(self.PATH + self.FNAME, self.SPATH + name)
+        shutil.copyfile(self.PATH + self.FNAME, self.PATH + name)
         print time + " - completed SAVE of " + name.upper() + " save"
 
     def load_save(self, name):
         time = str(datetime.datetime.now()).split()[1].split(".")[0]
-        shutil.copyfile(self.SPATH + name, self.PATH + self.FNAME)
+        shutil.copyfile(self.PATH + name, self.PATH + self.FNAME)
         print time + " - completed LOAD of " + name.upper() + " save"   
 
     def config(self):
         f = open("config.txt","r")
         data = f.read()
+        self.data = data
         self.USERNAME = data.split("[")[-1].split("]")[0]
+        self.setup = data.split()[-1]
+        f.close()
         
     def debug():
         pass
 
 ##no guarantee this'll work
-try:  
-    s = SaveSwap()
-    s.run()
-except:
-    print "Something went horribly wrong. Try relaunching and send me an email about the problem"
-    print "alessandro.minali@gmail.com"
-    input()
+
+s = SaveSwap()
+s.run()
+##except:
+##    print "Something went horribly wrong. Try relaunching and send me an email about the problem"
+##    print "alessandro.minali@gmail.com"
+##    input()
