@@ -1,3 +1,6 @@
+#Created by Alessandro Minali 2014
+#contact at: alessandro.minali@gmail.com
+#Visit me at: alessandrom.me
 import msvcrt
 import shutil
 import os
