@@ -30,11 +30,11 @@ Notes
 - If anything goes wrong during a session, manually use the MASTER save to overwrite your dks2 save.
 - If you want to forget everything about save swap use the ORIGINAL save that is made the first time you ever launch my script to manually overwrite your dks2 save
 
-Version
+Issues/Feedback
 ----
+contact me @ alessandro.minali@gmail.com
 
-1.0
-
+www.alessandrom.me
 
 License
 ----
