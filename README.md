@@ -1,7 +1,8 @@
 Dark Souls 2 Save Swap
 =========
 
-A small script to make save swapping much easier on players farming or doing tough challenge runs using hotkeys.
+A small script to make save swapping much easier on players farming or doing tough challenge runs using hotkeys. 
+Doesn't require a game restart!!!
 
 Installation
 --------------
