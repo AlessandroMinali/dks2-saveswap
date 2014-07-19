@@ -1,4 +1,4 @@
 ##DO NOT CHANGE ANYTHING IN THIS FILE UNLESS SPECIFIED
 
-username = [Alessandro] #enter your username within those brackets
-setup = 1
+username = [] #enter your username within those brackets
+setup = 0
