@@ -30,7 +30,7 @@ Notes
 - Saves can be made at any time.
 - Loads **MUST** be made at the login screen before you select continue and choose a character
 - If anything goes wrong during a session, manually use the MASTER save to overwrite your dks2 save.
-- If you want to forget everything about save swap use the ORIGINAL save that is made the first time you ever launch my script to manually overwrite your dks2 save
+- If you want to forget everything about save swap use the run the ***uninstall.py*** script. Then use the ORIGINAL save to manually ovewrite if you want to make a full save recovery.
 
 Issues/Feedback
 ----
