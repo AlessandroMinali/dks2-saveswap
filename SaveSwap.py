@@ -71,15 +71,22 @@ class SaveSwap():
         self.USERNAME = data.split("[")[-1].split("]")[0]
         self.setup = data.split()[-1]
         f.close()
-        
+
+    def delsaves(self):
+        for i in os.listdir(self.PATH):
+            if i in ['f1','f2','f3','f4','quick','master']:
+                os.remove(self.PATH + i)
+                print "Removed save " + i + "..."
+            
     def debug():
         pass
-
-##no guarantee this'll work
-try:
-    s = SaveSwap()
-    s.run()
-except:
-    print "Something went horribly wrong. Try relaunching and send me an email about the problem"
-    print "alessandro.minali@gmail.com"
-    input()
+    
+if __name__ == "__main__":
+    ##no guarantee this'll work
+    try:
+        s = SaveSwap()
+        s.run()
+    except:
+        print "Something went horribly wrong. Try relaunching and send me an email about the problem"
+        print "alessandro.minali@gmail.com"
+        input()
