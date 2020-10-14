@@ -32,12 +32,6 @@ Notes
 - If anything goes wrong during a session, manually use the MASTER save to overwrite your dks2 save.
 - If you want to forget everything about save swap use the run the ***uninstall.py*** script. Then use the ORIGINAL save to manually overwrite if you want to make a full save recovery.
 
-Issues/Feedback
-----
-contact me @ alessandro.minali@gmail.com
-
-www.alessandrom.me
-
 License
 ----
 
