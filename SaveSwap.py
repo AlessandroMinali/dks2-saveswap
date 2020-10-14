@@ -85,6 +85,5 @@ if __name__ == "__main__":
         s = SaveSwap()
         s.run()
     except:
-        print "Something went horribly wrong. Try relaunching and send me an email about the problem"
-        print "alessandro.minali@gmail.com"
+        print "Something went horribly wrong. Try relaunching"
         input()
